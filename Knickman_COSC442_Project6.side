@@ -5307,6 +5307,13 @@
     "parallel": false,
     "timeout": 300,
     "tests": []
+  }, {
+    "id": "99b805d7-ca2e-4f99-b465-3fec056724e1",
+    "name": "testAll",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["986f411c-078f-4ec5-99e9-f19c09e2ff01", "c0069ea4-1737-41e6-b4f9-eb22a8425f9b", "e9d4f281-bdd9-4b05-9982-65fdfced4f4a", "c9f3a52b-1868-4b2b-9a0a-7464956fb54d", "f66264bb-c7a5-4f1f-813e-9ad34655375e", "3f92dcd8-75b8-43c4-8c67-d2d7e553b6f5", "f09e199c-87f2-4c32-a7f9-dee551703832", "45b94923-6e43-433d-af20-a763060507d8", "93041ee6-be65-45e7-9217-5b25e693fc8c", "94c29e89-e7d0-4f55-bbb2-9c0e14d713eb"]
   }],
   "urls": ["https://phptravels.com/"],
   "plugins": []
