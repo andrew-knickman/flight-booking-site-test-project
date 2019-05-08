@@ -1,8 +1,8 @@
 {
   "id": "c18bf7b1-bb51-4283-88ca-d7bed98fb65b",
   "version": "2.0",
-  "name": "COSC442_Project6",
-  "url": "https://phptravels.net/",
+  "name": "Knickman_COSC442_Project6",
+  "url": "https://phptravels.net/admin",
   "tests": [{
     "id": "45b94923-6e43-433d-af20-a763060507d8",
     "name": "testUserLoginPass",
@@ -650,6 +650,112 @@
         ["xpath=//button[@type='submit']", "xpath:attributes"],
         ["xpath=//form[@id='loginfrm']/button", "xpath:idRelative"],
         ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e9d4f281-bdd9-4b05-9982-65fdfced4f4a",
+    "name": "testAdminLoginPass",
+    "commands": [{
+      "id": "21b47e8e-7bf7-4777-b427-6c1c62094163",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.phptravels.net/admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c86ae0e-fe14-4b4b-be76-41b6c608f8bf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b91e87f9-4cff-4c64-a166-6323dc33f71b",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=div:nth-child(1) > .form-control:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin@phptravels.com"
+    }, {
+      "id": "df9a1df3-e8de-4cff-8bc1-e84b16b9f91a",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "demoadmin"
+    }, {
+      "id": "6b102b65-d634-4eff-b568-4c3a906173d6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "160d71f7-5b4a-40ae-b2e8-213e686306c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#social-sidebar-menu > li:nth-child(1) > a",
+      "targets": [
+        ["css=#social-sidebar-menu > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Dashboard')]", "xpath:link"],
+        ["xpath=//ul[@id='social-sidebar-menu']/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.phptravels.net/admin')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af3167f7-f9eb-4b90-b093-90461846d4a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#social-sidebar-menu > li:nth-child(2) > a",
+      "targets": [
+        ["css=#social-sidebar-menu > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//ul[@id='social-sidebar-menu']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.phptravels.net/admin/updates/')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcb452ad-8a1d-4c8d-8690-81debe0ada4f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#social-sidebar-menu > li:nth-child(4) > a",
+      "targets": [
+        ["css=#social-sidebar-menu > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'General')]", "xpath:link"],
+        ["xpath=//ul[@id='social-sidebar-menu']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#menu-ui')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2366b5b-f38d-427d-8614-7ea123f2db76",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=#logout > a", "css:finder"],
+        ["xpath=//li[@id='logout']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.phptravels.net/admin/logout')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Logout')]", "xpath:innerText"]
       ],
       "value": ""
     }]
