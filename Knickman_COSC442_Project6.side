@@ -2,7 +2,7 @@
   "id": "c18bf7b1-bb51-4283-88ca-d7bed98fb65b",
   "version": "2.0",
   "name": "Knickman_COSC442_Project6",
-  "url": "https://phptravels.net/admin",
+  "url": "https://phptravels.net/",
   "tests": [{
     "id": "45b94923-6e43-433d-af20-a763060507d8",
     "name": "testUserLoginPass",
@@ -1288,7 +1288,409 @@
   }, {
     "id": "3f92dcd8-75b8-43c4-8c67-d2d7e553b6f5",
     "name": "testUserFlightSearch",
-    "commands": []
+    "commands": [{
+      "id": "05ac4e48-328b-46dc-a995-7d6789da339d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.phptravels.net/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75cb5945-5564-49a3-a822-a76a5e98f7eb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eac08c3e-cb1f-4c1b-9ba8-41a2e52898ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(1) > #li_myaccount > .dropdown-toggle",
+      "targets": [
+        ["css=.nav:nth-child(1) > #li_myaccount > .dropdown-toggle", "css:finder"],
+        ["xpath=(//a[contains(text(),'My Account')])[2]", "xpath:link"],
+        ["xpath=(//li[@id='li_myaccount']/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[3]", "xpath:href"],
+        ["xpath=//ul[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "144b418b-7286-458f-b11a-d9853dd675f5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.nav:nth-child(1) > #li_myaccount > .dropdown-toggle",
+      "targets": [
+        ["css=.nav:nth-child(1) > #li_myaccount > .dropdown-toggle", "css:finder"],
+        ["xpath=(//a[contains(text(),'My Account')])[2]", "xpath:link"],
+        ["xpath=(//li[@id='li_myaccount']/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[3]", "xpath:href"],
+        ["xpath=//ul[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "300efdb0-6c67-4dca-82e9-640909954bc8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.nav:nth-child(1) > #li_myaccount > .dropdown-toggle",
+      "targets": [
+        ["css=.nav:nth-child(1) > #li_myaccount > .dropdown-toggle", "css:finder"],
+        ["xpath=(//a[contains(text(),'My Account')])[2]", "xpath:link"],
+        ["xpath=(//li[@id='li_myaccount']/a)[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[3]", "xpath:href"],
+        ["xpath=//ul[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80dcad94-b774-4dcc-81b1-56899e9bf12c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav:nth-child(1) > #li_myaccount li:nth-child(1) > .go-text-right", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login')])[2]", "xpath:link"],
+        ["xpath=(//li[@id='li_myaccount']/ul/li/a)[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.phptravels.net/login')])[2]", "xpath:href"],
+        ["xpath=//ul[2]/ul/li/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c759d349-87ef-46be-a063-a72d980ee2ad",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.nav:nth-child(1) > #li_myaccount li:nth-child(1) > .go-text-right",
+      "targets": [
+        ["css=.nav:nth-child(1) > #li_myaccount li:nth-child(1) > .go-text-right", "css:finder"],
+        ["xpath=(//a[contains(text(),'Login')])[2]", "xpath:link"],
+        ["xpath=(//li[@id='li_myaccount']/ul/li/a)[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.phptravels.net/login')])[2]", "xpath:href"],
+        ["xpath=//ul[2]/ul/li/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60ed811e-7c1c-43cd-a210-19e43140a146",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/div/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b10df87d-6831-4899-8305-6593f45a611d",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/div/div[5]/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "user@phptravels.com"
+    }, {
+      "id": "ea475f94-5b5e-4085-b15a-2209ed17b2e0",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/div/div[5]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "demouser"
+    }, {
+      "id": "fd4ec49a-15c0-494b-aae7-908c9956bbc2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-action",
+      "targets": [
+        ["css=.btn-action", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='loginfrm']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cbef2a6-ae6a-4e63-9847-a8fd706231f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.text-center:nth-child(2) .hidden-xs",
+      "targets": [
+        ["css=.text-center:nth-child(2) .hidden-xs", "css:finder"],
+        ["xpath=//li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08ed8f9d-691a-49bb-be81-e3d8502efa9b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active > .text-center",
+      "targets": [
+        ["css=.active > .text-center", "css:finder"],
+        ["xpath=//div[@id='body-section']/section/div[2]/div/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#flights')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5d31475-0acc-4504-9db1-02a0b63b1db4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.active > .text-center",
+      "targets": [
+        ["css=.active > .text-center", "css:finder"],
+        ["xpath=//div[@id='body-section']/section/div[2]/div/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#flights')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2325279f-ba5e-4e1e-a980-79090b464f7d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.active > .text-center",
+      "targets": [
+        ["css=.active > .text-center", "css:finder"],
+        ["xpath=//div[@id='body-section']/section/div[2]/div/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#flights')]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10651c43-0ca1-408d-a56d-98f1fb1bfcf3",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=#s2id_location_from .select2-chosen",
+      "targets": [
+        ["css=#s2id_location_from .select2-chosen", "css:finder"],
+        ["xpath=//div[@id='s2id_location_from']/a/span", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Enter City Or Airport')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8ea53f8-fee7-4b04-a549-d32aaf8be69a",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.select2-focused",
+      "targets": [
+        ["css=.select2-focused", "css:finder"],
+        ["xpath=(//input[@type='text'])[23]", "xpath:attributes"],
+        ["xpath=//div[@id='select2-drop']/div/input", "xpath:idRelative"],
+        ["xpath=//div[18]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d8ab6a0-c501-4a46-aea3-e9b48ac438c8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.select2-focused",
+      "targets": [
+        ["css=.select2-focused", "css:finder"],
+        ["xpath=(//input[@type='text'])[23]", "xpath:attributes"],
+        ["xpath=//div[@id='select2-drop']/div/input", "xpath:idRelative"],
+        ["xpath=//div[18]/div/input", "xpath:position"]
+      ],
+      "value": "BWI"
+    }, {
+      "id": "58b61002-e704-4494-a5a8-08de5fb1c7a8",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.select2-focused",
+      "targets": [
+        ["css=.select2-focused", "css:finder"],
+        ["xpath=(//input[@type='text'])[23]", "xpath:attributes"],
+        ["xpath=//div[@id='select2-drop']/div/input", "xpath:idRelative"],
+        ["xpath=//div[18]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "35704b93-3b1e-464a-84db-616bacd56e24",
+      "comment": "",
+      "command": "mouseDown",
+      "target": "css=.select2-default > .select2-chosen",
+      "targets": [
+        ["css=.select2-default > .select2-chosen", "css:finder"],
+        ["xpath=//div[@id='s2id_location_to']/a/span", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div[2]/div/div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Enter City Or Airport')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5418367-daea-465b-9405-8e90055f5f29",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.select2-focused",
+      "targets": [
+        ["css=.select2-focused", "css:finder"],
+        ["xpath=(//input[@type='text'])[23]", "xpath:attributes"],
+        ["xpath=//div[@id='select2-drop']/div/input", "xpath:idRelative"],
+        ["xpath=//div[19]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22027345-33cd-47a3-bd9f-fc5aea4028ba",
+      "comment": "",
+      "command": "type",
+      "target": "css=.select2-focused",
+      "targets": [
+        ["css=.select2-focused", "css:finder"],
+        ["xpath=(//input[@type='text'])[23]", "xpath:attributes"],
+        ["xpath=//div[@id='select2-drop']/div/input", "xpath:idRelative"],
+        ["xpath=//div[19]/div/input", "xpath:position"]
+      ],
+      "value": "MKE"
+    }, {
+      "id": "4aee3aca-1642-43ef-8284-c8c0c27311b7",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.select2-focused",
+      "targets": [
+        ["css=.select2-focused", "css:finder"],
+        ["xpath=(//input[@type='text'])[23]", "xpath:attributes"],
+        ["xpath=//div[@id='select2-drop']/div/input", "xpath:idRelative"],
+        ["xpath=//div[19]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0859d421-4cea-4dd4-9b3b-b3e41d9cf570",
+      "comment": "",
+      "command": "click",
+      "target": "name=departure",
+      "targets": [
+        ["name=departure", "name"],
+        ["css=.departureTime", "css:finder"],
+        ["xpath=//input[@name='departure']", "xpath:attributes"],
+        ["xpath=//div[@id='flights']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db904107-cae7-40ff-8101-d05797e7a2d6",
+      "comment": "",
+      "command": "type",
+      "target": "name=departure",
+      "targets": [
+        ["name=departure", "name"],
+        ["css=.departureTime", "css:finder"],
+        ["xpath=//input[@name='departure']", "xpath:attributes"],
+        ["xpath=//div[@id='flights']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "0020-05-30"
+    }, {
+      "id": "862026e4-a494-49e8-8c7b-ab78fdc8cbbe",
+      "comment": "",
+      "command": "type",
+      "target": "name=departure",
+      "targets": [
+        ["name=departure", "name"],
+        ["css=.departureTime", "css:finder"],
+        ["xpath=//input[@name='departure']", "xpath:attributes"],
+        ["xpath=//div[@id='flights']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "0201-05-30"
+    }, {
+      "id": "2b72f54b-499e-4b08-89aa-fb586d977389",
+      "comment": "",
+      "command": "type",
+      "target": "name=departure",
+      "targets": [
+        ["name=departure", "name"],
+        ["css=.departureTime", "css:finder"],
+        ["xpath=//input[@name='departure']", "xpath:attributes"],
+        ["xpath=//div[@id='flights']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2019-05-30"
+    }, {
+      "id": "89b4b3de-dc25-415b-bad7-a6ff3a761055",
+      "comment": "",
+      "command": "type",
+      "target": "name=departure",
+      "targets": [
+        ["name=departure", "name"],
+        ["css=.departureTime", "css:finder"],
+        ["xpath=//input[@name='departure']", "xpath:attributes"],
+        ["xpath=//div[@id='flights']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2019-05-30"
+    }, {
+      "id": "0a2c64ff-4e0b-437d-9537-e02d3120bed3",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=departure",
+      "targets": [
+        ["name=departure", "name"],
+        ["css=.departureTime", "css:finder"],
+        ["xpath=//input[@name='departure']", "xpath:attributes"],
+        ["xpath=//div[@id='flights']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "079757c1-305d-4ee8-a1a6-9298d9b8ca18",
+      "comment": "",
+      "command": "type",
+      "target": "name=departure",
+      "targets": [
+        ["name=departure", "name"],
+        ["css=.departureTime", "css:finder"],
+        ["xpath=//input[@name='departure']", "xpath:attributes"],
+        ["xpath=//div[@id='flights']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "2019-05-30"
+    }, {
+      "id": "2407f74a-b48c-4673-a098-cc111402241d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=departure",
+      "targets": [
+        ["name=departure", "name"],
+        ["css=.departureTime", "css:finder"],
+        ["xpath=//input[@name='departure']", "xpath:attributes"],
+        ["xpath=//div[@id='flights']/form/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "c6915c9d-f14f-47e2-b51b-d73a9cb18d94",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav:nth-child(1) > li:nth-child(1) > .dropdown-toggle",
+      "targets": [
+        ["css=.nav:nth-child(1) > li:nth-child(1) > .dropdown-toggle", "css:finder"],
+        ["xpath=(//a[contains(text(),'Johny')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0);')])[3]", "xpath:href"],
+        ["xpath=//ul[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "17293061-92cf-42d1-bf65-0fa878d8960b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.open li:nth-child(2) > .go-text-right", "css:finder"],
+        ["xpath=(//a[contains(text(),'Logout')])[2]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://www.phptravels.net/account/logout/')])[2]", "xpath:href"],
+        ["xpath=//ul[2]/ul/li/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
   }, {
     "id": "94c29e89-e7d0-4f55-bbb2-9c0e14d713eb",
     "name": "testUserTour",
@@ -1779,6 +2181,6 @@
     "timeout": 300,
     "tests": ["986f411c-078f-4ec5-99e9-f19c09e2ff01", "c0069ea4-1737-41e6-b4f9-eb22a8425f9b", "e9d4f281-bdd9-4b05-9982-65fdfced4f4a", "c9f3a52b-1868-4b2b-9a0a-7464956fb54d", "f66264bb-c7a5-4f1f-813e-9ad34655375e", "3f92dcd8-75b8-43c4-8c67-d2d7e553b6f5", "f09e199c-87f2-4c32-a7f9-dee551703832", "45b94923-6e43-433d-af20-a763060507d8", "93041ee6-be65-45e7-9217-5b25e693fc8c", "94c29e89-e7d0-4f55-bbb2-9c0e14d713eb"]
   }],
-  "urls": ["https://phptravels.com/", "https://phptravels.net/admin"],
+  "urls": ["https://phptravels.com/", "https://phptravels.net/admin", "https://phptravels.net/"],
   "plugins": []
 }
